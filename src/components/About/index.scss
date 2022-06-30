@@ -1,0 +1,311 @@
+.text-zone {
+  font-size: 13px;
+  color: #fff;
+  font-family: sans-serif;
+  font-weight: 300;
+  position: absolute;
+  top: 50%;
+  left: 29%;
+  transform: translateY(-50%);
+  width: 50%;
+
+  h1 {
+    font-size: 3em;
+    font-family: 'Coolvetica';
+    color: #FD7013;
+    font-weight: 400;
+    margin-top: 0;
+    position: relative;
+    margin-bottom: 40px;
+    left: -10px;
+  
+    &:before {
+      content: '<h1>';
+      font-family: 'La Belle Aurore', cursive;
+      color: #FD7013;
+      font-size: 18px;
+      position: absolute;
+      margin-top: -10px;
+      left: -10px;
+      opacity: 0.6;
+      line-height: 18px;
+    }
+  
+    &:after {
+      content: '</h1>';
+      font-family: 'La Belle Aurore', cursive;
+      color: #FD7013;
+      font-size: 18px;
+      line-height: 18px;
+      position: absolute;
+      left: -30px;
+      bottom: -20px;
+      margin-left: 20px;
+      opacity: 0.6;
+    }
+  }
+
+}
+
+
+@media screen and (min-width: 760px) {
+  .text-zone {
+    font-size: 2em;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 300;
+    top: 35%;
+    left: 20%;
+    transform: translateY(-50%);
+    width: 70%;
+  
+    h1 {
+      font-size: 3em;
+      font-family: 'Coolvetica';
+      color: #FD7013;
+      font-weight: 400;
+      margin-top: 0;
+      position: relative;
+      margin-bottom: 40px;
+      left: -10px;
+    
+      &:before {
+        content: '<h1>';
+        font-family: 'La Belle Aurore', cursive;
+        color: #FD7013;
+        font-size: 18px;
+        position: absolute;
+        margin-top: -10px;
+        left: -10px;
+        opacity: 0.6;
+        line-height: 18px;
+      }
+    
+      &:after {
+        content: '</h1>';
+        font-family: 'La Belle Aurore', cursive;
+        color: #FD7013;
+        font-size: 18px;
+        line-height: 18px;
+        position: absolute;
+        left: -30px;
+        bottom: -20px;
+        margin-left: 20px;
+        opacity: 0.6;
+      }
+    }
+  }
+
+
+  .stage-cube-cont {
+    width: 50%;
+    height: 100%;
+    top: 55%;
+    padding-top: 18%;
+    margin-left: 0;
+    position: absolute;
+    right: 25%;
+    overflow: hidden;
+  }
+  
+  .cubespinner {
+    animation-name: spincube;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 12s;
+    transform-style: preserve-3d;
+    transform-origin: 100px 100px 0;
+    margin-left: calc(50% - 100px);
+  
+    div {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      border: 1px solid #ccc;
+      background: rgba(255, 255, 255, 0.4);
+      text-align: center;
+      font-size: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 0 20px 0px lightyellow;
+    }
+  
+    .face1 {
+      transform: translateZ(100px);
+      color: #dd0031;
+    }
+    .face2 {
+      transform: rotateY(90deg) translateZ(100px);
+      color: #f06529;
+    }
+    .face3 {
+      transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+      color: #28a4d9;
+    }
+    .face4 {
+      transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
+      color: #5ed4f4;
+    }
+    .face5 {
+      transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+      color: #efd81d;
+    }
+    .face6 {
+      transform: rotateX(-90deg) translateZ(100px);
+      color: #ec4d28;
+    }
+  }
+  
+  @keyframes spincube {
+    from,
+    to {
+      transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+    16% {
+      transform: rotateY(-90deg);
+    }
+    33% {
+      transform: rotateY(-90deg) rotateZ(90deg);
+    }
+    50% {
+      transform: rotateY(-180deg) rotateZ(90deg);
+    }
+    66% {
+      transform: rotateY(-270deg) rotateX(90deg);
+    }
+    83% {
+      transform: rotateX(90deg);
+    }
+  }
+ }
+
+ @media screen and (min-width: 1200px) {
+  .text-zone {
+    font-size: 2em;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 300;
+    top: 73%;
+    left: 10%;
+    transform: translateY(-50%);
+    width: 40%;
+    height: 50em;
+  
+    h1 {
+      font-size: 3em;
+      font-family: 'Coolvetica';
+      color: #FD7013;
+      font-weight: 400;
+      margin-top: 0;
+      position: relative;
+      margin-bottom: 40px;
+      left: -10px;
+    
+      &:before {
+        content: '<h1>';
+        font-family: 'La Belle Aurore', cursive;
+        color: #FD7013;
+        font-size: 18px;
+        position: absolute;
+        margin-top: -10px;
+        left: -10px;
+        opacity: 0.6;
+        line-height: 18px;
+      }
+    
+      &:after {
+        content: '</h1>';
+        font-family: 'La Belle Aurore', cursive;
+        color: #FD7013;
+        font-size: 18px;
+        line-height: 18px;
+        position: absolute;
+        left: -30px;
+        bottom: -20px;
+        margin-left: 20px;
+        opacity: 0.6;
+      }
+    }
+  }
+  
+  .stage-cube-cont {
+    width: 50%;
+    height: 100%;
+    top: 10%;
+    padding-top: 18%;
+    margin-left: 0;
+    position: absolute;
+    right: 0;
+    overflow: hidden;
+  }
+ }
+
+ @media screen and (min-width: 1800px) {
+  .text-zone {
+    font-size: 2em;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 300;
+    top: 73%;
+    left: 10%;
+    transform: translateY(-50%);
+    width: 40%;
+    height: 50em;
+  
+    h1 {
+      font-size: 3em;
+      font-family: 'Coolvetica';
+      color: #FD7013;
+      font-weight: 400;
+      margin-top: 0;
+      position: relative;
+      margin-bottom: 40px;
+      left: -10px;
+    
+      &:before {
+        content: '<h1>';
+        font-family: 'La Belle Aurore', cursive;
+        color: #FD7013;
+        font-size: 18px;
+        position: absolute;
+        margin-top: -10px;
+        left: -10px;
+        opacity: 0.6;
+        line-height: 18px;
+      }
+    
+      &:after {
+        content: '</h1>';
+        font-family: 'La Belle Aurore', cursive;
+        color: #FD7013;
+        font-size: 18px;
+        line-height: 18px;
+        position: absolute;
+        left: -30px;
+        bottom: -20px;
+        margin-left: 20px;
+        opacity: 0.6;
+      }
+    }
+  }
+  
+  .stage-cube-cont {
+    width: 50%;
+    top: -10%;
+    margin-left: 0;
+    right: 0;
+    overflow: hidden;
+  }
+ }
+ @media screen and (min-width: 2400px) {
+  .stage-cube-cont {
+    width: 50%;
+    top: -40%;
+    margin-left: 0;
+    right: 0;
+    overflow: hidden;
+  }
+ }
+
+  
