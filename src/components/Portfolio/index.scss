@@ -1,147 +1,152 @@
 .portfolio-page {
-    padding: 0;
-    margin-left: 10em;
+    padding-left: 100px;
+    padding-right: 50px;
+    width: calc(100% - 150px);
+    position: initial;
     height: 100%;
-    
+    overflow: auto;
+
     h1 {
         font-size: 4em;
         font-family: 'Coolvetica';
         color: #FD7013;
         font-weight: 400;
+        margin-top: 0;
         position: relative;
         margin-bottom: 40px;
-        left: -10px;
-        width: 100%;
-      }
+        right: 100px;
+
+        &:before {
+            content: '<h1>';
+            font-family: 'La Belle Aurore', cursive;
+            color: #FD7013;
+            font-size: 18px;
+            position: absolute;
+            margin-top: -10px;
+            left: -10px;
+            opacity: 0.6;
+            line-height: 18px;
+        }
+
+        &:after {
+            content: '</h1>';
+            font-family: 'La Belle Aurore', cursive;
+            color: #FD7013;
+            font-size: 18px;
+            line-height: 18px;
+            position: absolute;
+            left: -30px;
+            bottom: -20px;
+            margin-left: 20px;
+            opacity: 0.6;
+        }
+    }
+
+    h1.page-title {
+        margin-left: 100px;
+        margin-top: 100px;
+    }
 
     .images-container {
-        display: flex;
-        flex-direction: column;
-        width: 10em;
+        //display: flex;
+        margin-bottom: 30em;
+        //flex-wrap: wrap;
+        padding-bottom: 100px;
+    }
 
-        .image-box {
+    .image-box {
+        position: relative;
+        flex: 1 1 20%;
+        height: 30em;
+        margin-bottom: 8em;
+        border-radius: 10px;
 
-            margin-bottom: 23em;
+        .portfolio-image {
+            position: absolute;
+            z-index: 2;
+            width: 23.6em;
+            height: 100%;
+            object-fit: cover;
+            margin-bottom: 30px;
+        }
 
-            h4 {
-                font-size: .4em;
-                color: #fff;
-                font-family: sans-serif;
-                font-weight: 300;
-                max-width: fit-content;
-                animation: pulse 1s;
-                &:nth-of-type(1) {
-                  animation-delay: 1.1s;
-                }
-                &:nth-of-type(2) {
-                  animation-delay: 1.2s;
-                }
-                &:nth-of-type(3) {
-                  animation-delay: 1.3s;
-                }
-              }
+        .content {
+            position: absolute;
+            width: 20em;
+            z-index: 3;
+            padding: 10px 20px;
+            transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+            background: linear-gradient(180deg,
+                    rgba(0, 0, 0, 0.2) 0,
+                    rgba(0, 0, 0, 1));
+            bottom: -70px;
+        }
 
-            p {
-                font-size: .4em;
-                color: #fff;
-                font-family: sans-serif;
-                font-weight: 300;
-                animation: pulse 1s;
-                &:nth-of-type(1) {
-                  animation-delay: 1.1s;
-                }
-                &:nth-of-type(2) {
-                  animation-delay: 1.2s;
-                }
-                &:nth-of-type(3) {
-                  animation-delay: 1.3s;
-                }
-              }
-        
-                .portfolio-image {
-                    z-index: 2;
-                    width: 100%;
-                    height: 60%;
-                    object-fit: cover;
-                }
-        
-                .content {
-                    position: absolute;
-                    width: 10%;
-                    height: 10%;
-                    z-index: 3;
-                    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-                    background: linear-gradient(
-                        180deg,
-                        rgba(0, 0, 0, 0.2) 0,
-                        rgba(0, 0, 0, 1)
-                    );
-                }
-        
-                .title {
-                    margin-bottom: 0;
-                    margin-top: 0;
-                    color: #fff;
-                    font-size: 24px;
-                    font-weight: 500;
-                }
-        
-                .description {
-                    font-size: 14px;
-                    color: #fff;
-                    font-weight: 700;
-                }
-        
-                .btn {
-                    margin-top: 30px;
-                    margin-bottom: 10px;
-                    padding: 0 23px;
-                    height: 40px;
-                    line-height: 34px;
-                    border: 2px solid #FD7013;
-                    border-radius: 4px;
-                    font-size: 14px;
-                    color: #fff;
-                    background: transparent;
-                    text-transform: uppercase;
-                    font-weight: 700;
-                    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-                    cursor: pointer;
-                }
-        
-                .btn:hover {
-                    transform: translateY(-3px);
-                    background: #FD7013;
-                }
-        
-                &:after {
-                    content: "";
-                    background: linear-gradient(180deg, #FD7013, #000);
-                    position: absolute;
-                    width: 10%;
-                    height: 10%;
-                    left: 0;
-                    right: 0;
-                    bottom: 0;
-                    top: 0;
-                    z-index: 2;
-                    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-                    opacity: 0;
-                }
-        
-                &:hover:after {
-                    opacity: 0.85;
-                }
-        
-                &:hover .content {
-                    bottom: 0;
-                    background: transparent;
-                }
+        .title {
+            margin-bottom: 0;
+            margin-top: 0;
+            color: #fff;
+            font-size: 2rem;
+            font-weight: 500;
+            line-height: 24px;
+        }
+
+        .description {
+            font-size: 1rem;
+            margin-bottom: 5px;
+            color: #fff;
+            font-weight: 700;
+        }
+
+        .btn {
+            margin-top: 30px;
+            margin-bottom: 10px;
+            padding: 0 23px;
+            height: 40px;
+            line-height: 34px;
+            border: 2px solid #FD7013;
+            border-radius: 4px;
+            font-size: 14px;
+            color: #fff;
+            background: transparent;
+            text-transform: uppercase;
+            font-weight: 700;
+            transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            background: #FD7013;
+        }
+
+        &:after {
+            content: "";
+            background: linear-gradient(180deg, #FD7013, #000);
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+            opacity: 0;
+        }
+
+        &:hover:after {
+            opacity: 0.85;
+        }
+
+        &:hover .content {
+            bottom: 0;
+            background: transparent;
         }
     }
 }
 
-/*@media screen and (min-width: 1000px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
     .portfolio-page {
         padding-left: 100px;
         padding-right: 50px;
@@ -150,54 +155,158 @@
         height: 100%;
         overflow: auto;
 
-         h1 {
-        font-size: 4em;
-        font-family: 'Coolvetica';
-        color: #FD7013;
-        font-weight: 400;
-        margin-top: 0;
-        position: relative;
-        margin-bottom: 40px;
-        left: -10px;
-  
-        &:before {
-          content: '<h1>';
-          font-family: 'La Belle Aurore', cursive;
-          color: #FD7013;
-          font-size: 18px;
-          position: absolute;
-          margin-top: -10px;
-          left: -10px;
-          opacity: 0.6;
-          line-height: 18px;
+        h1 {
+            font-size: 4em;
+            font-family: 'Coolvetica';
+            color: #FD7013;
+            font-weight: 400;
+            margin-top: 0;
+            position: relative;
+            margin-bottom: 40px;
+            left: -10px;
+
+            &:before {
+                content: '<h1>';
+                font-family: 'La Belle Aurore', cursive;
+                color: #FD7013;
+                font-size: 18px;
+                position: absolute;
+                margin-top: -10px;
+                left: -10px;
+                opacity: 0.6;
+                line-height: 18px;
+            }
+
+            &:after {
+                content: '</h1>';
+                font-family: 'La Belle Aurore', cursive;
+                color: #FD7013;
+                font-size: 18px;
+                line-height: 18px;
+                position: absolute;
+                left: -30px;
+                bottom: -20px;
+                margin-left: 20px;
+                opacity: 0.6;
+            }
         }
-  
-        &:after {
-          content: '</h1>';
-          font-family: 'La Belle Aurore', cursive;
-          color: #FD7013;
-          font-size: 18px;
-          line-height: 18px;
-          position: absolute;
-          left: -30px;
-          bottom: -20px;
-          margin-left: 20px;
-          opacity: 0.6;
-        }
-      }
-    
+
         h1.page-title {
             margin-left: 100px;
             margin-top: 100px;
         }
-    
+
+        .images-container {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            padding-bottom: 100px;
+        }
+
+        .image-box {
+            position: relative;
+            flex: 1 1 20%;
+            height: 400px;
+            margin: 2em;
+            margin-bottom: 5em;
+            border-radius: 10px;
+            max-width: calc(25% - 10px);
+
+            .portfolio-image {
+                position: absolute;
+                z-index: 2;
+                width: 16.8em;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .content {
+                position: absolute;
+                width: 100%;
+                z-index: 3;
+                padding: 10px 20px;
+                transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+                background: linear-gradient(180deg,
+                        rgba(0, 0, 0, 0.2) 0,
+                        rgba(0, 0, 0, 1));
+                bottom: -70px;
+            }
+
+            &:after {
+                content: "";
+                background: linear-gradient(180deg, #FD7013, #000);
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                top: 0;
+                width: 17em;
+                height: 100%;
+                z-index: 2;
+                transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+                opacity: 0;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .portfolio-page {
+        padding-left: 100px;
+        padding-right: 50px;
+        width: calc(100% - 150px);
+        position: initial;
+        height: 100%;
+        overflow: auto;
+
+        h1 {
+            font-size: 4em;
+            font-family: 'Coolvetica';
+            color: #FD7013;
+            font-weight: 400;
+            margin-top: 0;
+            position: relative;
+            margin-bottom: 40px;
+            left: -10px;
+
+            &:before {
+                content: '<h1>';
+                font-family: 'La Belle Aurore', cursive;
+                color: #FD7013;
+                font-size: 18px;
+                position: absolute;
+                margin-top: -10px;
+                left: -10px;
+                opacity: 0.6;
+                line-height: 18px;
+            }
+
+            &:after {
+                content: '</h1>';
+                font-family: 'La Belle Aurore', cursive;
+                color: #FD7013;
+                font-size: 18px;
+                line-height: 18px;
+                position: absolute;
+                left: -30px;
+                bottom: -20px;
+                margin-left: 20px;
+                opacity: 0.6;
+            }
+        }
+
+        h1.page-title {
+            margin-left: 100px;
+            margin-top: 100px;
+        }
+
         .images-container {
             display: flex;
             gap: 15px;
             flex-wrap: wrap;
             padding-bottom: 100px;
         }
-    
+
         .image-box {
             position: relative;
             flex: 1 1 20%;
@@ -205,7 +314,7 @@
             overflow: hidden;
             border-radius: 10px;
             max-width: calc(25% - 10px);
-    
+
             .portfolio-image {
                 position: absolute;
                 z-index: 2;
@@ -213,37 +322,35 @@
                 height: 100%;
                 object-fit: cover;
             }
-    
+
             .content {
                 position: absolute;
                 width: 100%;
                 z-index: 3;
                 padding: 10px 20px;
                 transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-                background: linear-gradient(
-                    180deg,
-                    rgba(0, 0, 0, 0.2) 0,
-                    rgba(0, 0, 0, 1)
-                );
+                background: linear-gradient(180deg,
+                        rgba(0, 0, 0, 0.2) 0,
+                        rgba(0, 0, 0, 1));
                 bottom: -70px;
             }
-    
+
             .title {
                 margin-bottom: 0;
                 margin-top: 0;
                 color: #fff;
-                font-size: 24px;
+                font-size: 22px;
                 font-weight: 500;
                 line-height: 24px;
             }
-    
+
             .description {
                 font-size: 14px;
                 margin-bottom: 5px;
                 color: #fff;
                 font-weight: 700;
             }
-    
+
             .btn {
                 margin-top: 30px;
                 margin-bottom: 10px;
@@ -260,12 +367,12 @@
                 transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
                 cursor: pointer;
             }
-    
+
             .btn:hover {
                 transform: translateY(-3px);
                 background: #FD7013;
             }
-    
+
             &:after {
                 content: "";
                 background: linear-gradient(180deg, #FD7013, #000);
@@ -280,15 +387,15 @@
                 transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
                 opacity: 0;
             }
-    
+
             &:hover:after {
                 opacity: 0.85;
             }
-    
+
             &:hover .content {
                 bottom: 0;
                 background: transparent;
             }
         }
-    }   
-}*/
+    }
+}

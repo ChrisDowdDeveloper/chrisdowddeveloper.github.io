@@ -1,5 +1,4 @@
 import './index.scss'
-import LogoS from '../../assets/images/logo-s.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faLinkedin,
@@ -12,7 +11,6 @@ const Sidebar = () => {
   return (
     <div className="nav-bar">
       <Link className="logo" to="/">
-        <img src={LogoS} alt="Logo" />
         <h1 className="name">Chris Dowd</h1>
       </Link>
       <nav>
