@@ -1,5 +1,5 @@
 .text-zone {
-  font-size: 13px;
+  font-size: 11px;
   color: #fff;
   font-family: sans-serif;
   font-weight: 300;
@@ -298,14 +298,43 @@
     overflow: hidden;
   }
  }
- @media screen and (min-width: 2400px) {
+
+ @media screen and (min-width: 768px) and (max-width: 1023px) {
   .stage-cube-cont {
     width: 50%;
-    top: -40%;
+    top: -5%;
     margin-left: 0;
     right: 0;
     overflow: hidden;
   }
  }
 
+ @media screen and (min-width: 1023px) and (max-width: 1279px) {
+  .stage-cube-cont {
+    width: 50%;
+    top: -30%;
+    margin-left: 0;
+    right: 0;
+    overflow: hidden;
+  }
   
+  .text-zone {
+    margin-top: 12%;
+    font-size: 16px;
+  }
+ }
+
+ @media screen and (min-width: 1280px) {
+  .stage-cube-cont {
+    width: 50%;
+    top: -20%;
+    margin-left: 0;
+    right: 0;
+    overflow: hidden;
+  }
+
+  .text-zone {
+    margin-top: 2%;
+    font-size: 20px;
+  }
+ }

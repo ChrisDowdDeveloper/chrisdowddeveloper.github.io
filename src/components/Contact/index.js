@@ -5,6 +5,7 @@ import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
+import 'leaflet/dist/leaflet.css';
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -52,9 +53,8 @@ const Contact = () => {
             />
           </h1>
           <p>
-            I am interested in freelance opportunities - especially ambitious or
-            large projects. However, if you have other request or question,
-            don't hesitate to contact me using below form either.
+            Please don't hesitate to contact me using the below form for employment oppurtunities or
+            freelance inquiries.
           </p>
           <div className="contact-form">
             <form ref={form} onSubmit={sendEmail}>
@@ -100,7 +100,7 @@ const Contact = () => {
           <span>chrisdowd1996@gmail.com</span>
         </div>
         <div className="map-wrap">
-          <MapContainer id="map" center={[38.6270, -90.5258]} zoom={8}>
+          <MapContainer center={[38.6270, -90.5258]} zoom={9}>
             <TileLayer url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png' />
           </MapContainer>
         </div>

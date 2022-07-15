@@ -36,18 +36,20 @@ const About = () => {
             />
           </h1>
           <p>
-            I'm very ambitious front-end developer looking for a role in
-            established IT company with the opportunity to work with the latest
+            I'm very ambitious full stack developer looking for a role in an
+            established company with the opportunity to work with the latest
             technologies on challenging and diverse projects.
           </p>
           <p align="LEFT">
-            I'm quietly confident, naturally curious, and perpetually working on
-            improving my chops one design problem at a time.
+            While I may be new to software development, I believe my eagerness and quick ability to learn, ability
+            to adapt quickly gives me an advantage in the work force allowing me to contribute to projects
+            and helping out my fellow peers. 
           </p>
           <p>
-            If I need to define myself in one sentence that would be a family
-            person, father of a beautiful daughter, a sports fanatic,
-            photography enthusiast, and tech-obsessed!!!
+            Growing up, I was always considered a tech savvy person. even taking an application building class in highschool.
+            Recently looking for a career change, I remembered how challenging and gratifying it was I decided to pursue
+            a higher education experience in it. I signed up at DeVry University in August of 2021 and not long after that
+            I signed up for the Thinkful coding bootcamp in September of 2021.
           </p>
         </div>
 

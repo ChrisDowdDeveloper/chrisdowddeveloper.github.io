@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
-import Logo from './Logo'
 import './index.scss'
 
 const Home = () => {
@@ -10,17 +9,21 @@ const Home = () => {
 
   const nameArray = [' ', 'C', 'h', 'r', 'i', 's']
   const jobArray = [
-    'w',
-    'e',
-    'b',
-    ' ',
-    'd',
-    'e',
-    'v',
-    'e',
-    'l',
+    's',
     'o',
-    'p',
+    'f',
+    't',
+    'w',
+    'a',
+    'r',
+    'e',
+    ' ',
+    'e',
+    'n',
+    'g',
+    'i',
+    'n',
+    'e',
     'e',
     'r',
     '.',
@@ -54,15 +57,17 @@ const Home = () => {
             <AnimatedLetters
               letterClass={letterClass}
               strArray={jobArray}
-              idx={22}
+              idx={18}
             />
           </h1>
-          <h2>Full Stack Developer</h2>
+          <h2>Full Stack Engineer</h2>
           <Link to="/contact" className="flat-button">
             CONTACT ME
           </Link>
+          <a href="https://docs.google.com/document/d/19UNgLoxZcBKPct5Q-r8VjUms6QkpzVUwQUM6ZuNeoAE/edit?usp=sharing" target="_blank" className="flat-button">
+            VIEW RESUME
+          </a>
         </div>
-        <Logo />
       </div>
 
       <Loader type="pacman" />
