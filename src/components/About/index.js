@@ -43,7 +43,7 @@ const About = () => {
           <p align="LEFT">
             While I may be new to software development, I believe my eagerness and quick ability to learn, ability
             to adapt quickly gives me an advantage in the work force allowing me to contribute to projects
-            and helping out my fellow peers. 
+            and helping out my fellow peers.
           </p>
           <p>
             Growing up, I was always considered a tech savvy person. even taking an application building class in highschool.
@@ -76,7 +76,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <Loader type="pacman" />
+      <Loader type="ball-grid-pulse" />
     </>
   )
 }

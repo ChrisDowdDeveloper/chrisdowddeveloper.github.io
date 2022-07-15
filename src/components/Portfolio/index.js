@@ -4,7 +4,7 @@ import AnimatedLetters from "../AnimatedLetters";
 import "./index.scss";
 import { portfolio } from "../../data/portfolio";
 
-const Portfolio = () => { 
+const Portfolio = () => {
     const [letterClass, setLetterClass] = useState('text-animate');
 
     useEffect(() => {
@@ -15,8 +15,8 @@ const Portfolio = () => {
         return () => {
             clearTimeout(timer);
         }
-    }); 
-    
+    });
+
     return (
         <>
             <div className="container portfolio-page">
@@ -30,7 +30,7 @@ const Portfolio = () => {
                 <div className="images-container">
                     {portfolio.map(project => (
                         <div className="image-box" key={project.id}>
-                                <img src={project.image} className="portfolio-image" alt="portfolio" />
+                            <img src={project.image} className="portfolio-image" alt="portfolio" />
                             <div className="content">
                                 <p className="title">{project.title}</p>
                                 <h4 className="description">{project.description}</h4>
@@ -42,7 +42,7 @@ const Portfolio = () => {
                     ))}
                 </div>
             </div>
-            <Loader type="pacman" />
+            <Loader type="ball-grid-pulse" />
         </>
     );
 }

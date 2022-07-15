@@ -64,13 +64,13 @@ const Home = () => {
           <Link to="/contact" className="flat-button">
             CONTACT ME
           </Link>
-          <a href="https://docs.google.com/document/d/19UNgLoxZcBKPct5Q-r8VjUms6QkpzVUwQUM6ZuNeoAE/edit?usp=sharing" target="_blank" className="flat-button">
+          <a href="https://docs.google.com/document/d/19UNgLoxZcBKPct5Q-r8VjUms6QkpzVUwQUM6ZuNeoAE/edit?usp=sharing" rel="noreferrer" target="_blank" className="flat-button">
             VIEW RESUME
           </a>
         </div>
       </div>
 
-      <Loader type="pacman" />
+      <Loader type="ball-grid-pulse" />
     </>
   )
 }
