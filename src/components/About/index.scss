@@ -1,13 +1,13 @@
 .text-zone {
-  font-size: 11px;
+  font-size: 2.2rem;
   color: #fff;
   font-family: sans-serif;
   font-weight: 300;
   position: absolute;
   top: 50%;
-  left: 29%;
+  left: 19%;
   transform: translateY(-50%);
-  width: 50%;
+  width: 70%;
 
   h1 {
     font-size: 3em;
@@ -50,11 +50,11 @@
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .text-zone {
-    font-size: 2em;
+    font-size: 2.3rem;
     color: #fff;
     font-family: sans-serif;
     font-weight: 300;
-    top: 35%;
+    top: 38%;
     left: 20%;
     transform: translateY(-50%);
     width: 70%;
@@ -193,7 +193,7 @@
 
 @media screen and (min-width: 1023px) and (max-width: 1279px) {
   .text-zone {
-    font-size: 3em;
+    font-size: 2rem;
     color: #fff;
     font-family: sans-serif;
     font-weight: 300;
@@ -336,11 +336,11 @@
 
 @media screen and (min-width: 1280px) {
   .text-zone {
-    font-size: 3em;
+    font-size: 2em;
     color: #fff;
     font-family: sans-serif;
     font-weight: 300;
-    top: 55%;
+    top: 58%;
     left: 10%;
     transform: translateY(-50%);
     width: 70%;
@@ -386,7 +386,7 @@
   .stage-cube-cont {
     width: 50%;
     height: 100%;
-    top: -15%;
+    top: -35%;
     padding-top: 18%;
     margin-left: 0;
     position: absolute;
