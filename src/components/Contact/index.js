@@ -28,7 +28,7 @@ const Contact = () => {
       .then(
         () => {
           alert('Message successfully sent!')
-          navigate('/contact')
+          navigate('/', { replace: true })
         },
         () => {
           alert('Sorry, failed to send. If problem persists, please reach out to chrisdowd1996@gmail.com')
