@@ -9,7 +9,7 @@ import 'leaflet/dist/leaflet.css';
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
-  const form = useRef()
+  const form = useRef();
 
   useEffect(() => {
     function animate() {
@@ -25,10 +25,9 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        'gmail',
-        'template_YeJhZkgb',
+        'service_3zf9ogi',
+        'template_djetb8o',
         form.current,
-        'service_3zf9ogi'
       )
       .then(
         () => {
@@ -36,7 +35,7 @@ const Contact = () => {
           window.location.reload(false)
         },
         () => {
-          alert('Failed to send the message, please try again')
+          alert('Sorry, failed to send. If problem persists, please reach out to chrisdowd1996@gmail.com')
         }
       )
   }
