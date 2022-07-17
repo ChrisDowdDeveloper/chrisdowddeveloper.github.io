@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from 'react'
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom'
 import Loader from 'react-loaders'
 import { MapContainer, TileLayer } from 'react-leaflet'
 import emailjs from '@emailjs/browser'
@@ -10,7 +10,7 @@ import 'leaflet/dist/leaflet.css';
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
   const form = useRef();
-  const history = useHistory();
+  const navigate = useNavigate();
 
   useEffect(() => {
     function animate() {
@@ -28,7 +28,7 @@ const Contact = () => {
       .then(
         () => {
           alert('Message successfully sent!')
-          history.push("/contact")
+          navigate('/contact')
         },
         () => {
           alert('Sorry, failed to send. If problem persists, please reach out to chrisdowd1996@gmail.com')
