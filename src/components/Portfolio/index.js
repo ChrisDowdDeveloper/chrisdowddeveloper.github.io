@@ -37,6 +37,9 @@ const Portfolio = () => {
                                 <button className="btn" onClick={() => window.open(project.url)}>
                                     View
                                 </button>
+                                {project.liveUrl !== null ? <button className="btn" onClick={() => window.open(project.liveUrl)}>
+                                    View Live
+                                </button> : null}
                             </div>
                         </div>
                     ))}

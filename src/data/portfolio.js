@@ -10,41 +10,47 @@ export const portfolio = [
         "image": restaurant,
         "title": "Restaurant Reservation",
         "description": "React, JSX, Bootstrap, Express.js",
-        "url": "http://google.com"
+        "url": "https://github.com/ChrisDowdDeveloper/RestaurantReservation",
+        "liveUrl": "https://periodicrestaurant-client.herokuapp.com/",
     },
     {
         "id": 2,
         "image": movieTheater,
         "title": "WeLoveMovies",
         "description": "React, JSX, Bootstrap, Express.js",
-        "url": "http://google.com"
+        "url": "https://github.com/ChrisDowdDeveloper/Capstone-WeLoveMovies",
+        "liveUrl": "https://welovemovies-client-chris.herokuapp.com/",
     },
     {
         "id": 3,
         "image": cater,
         "title": "GrubDash",
         "description": "Express.js",
-        "url": "http://google.com"
+        "url": "https://github.com/ChrisDowdDeveloper/GrubDash",
+        "liveUrl": null,
     },
     {
         "id": 4,
         "image": students,
         "title": "Flashcard",
         "description": "React, JSX",
-        "url": "http://google.com"
+        "url": "https://github.com/ChrisDowdDeveloper/flashcard",
+        "liveUrl": null,
     },
     {
         "id": 5,
         "image": timer,
         "title": "Pomodoro Timer",
         "description": "React, JSX",
-        "url": "http://google.com"
+        "url": "https://github.com/ChrisDowdDeveloper/PomodoroTimer",
+        "liveUrl": null,
     },
     {
         "id": 6,
         "image": love,
         "title": "Thinkful Cupid",
         "description": "HTML, CSS",
-        "url": "http://google.com"
+        "url": "https://github.com/ChrisDowdDeveloper/ThinkfulCupid",
+        "liveUrl": "https://chrisdowddeveloper.github.io/ThinkfulCupid/",
     }
 ]
