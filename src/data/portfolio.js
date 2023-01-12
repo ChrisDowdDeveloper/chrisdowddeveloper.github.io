@@ -11,7 +11,7 @@ export const portfolio = [
         "title": "Restaurant Reservation",
         "description": "React, JSX, Bootstrap, Express.js",
         "url": "https://github.com/ChrisDowdDeveloper/RestaurantReservation",
-        "liveUrl": "https://periodicrestaurant-client.herokuapp.com/",
+        "liveUrl": "https://restaurantreservation.onrender.com",
     },
     {
         "id": 2,
@@ -19,7 +19,7 @@ export const portfolio = [
         "title": "WeLoveMovies",
         "description": "React, JSX, Bootstrap, Express.js",
         "url": "https://github.com/ChrisDowdDeveloper/Capstone-WeLoveMovies",
-        "liveUrl": "https://welovemovies-client-chris.herokuapp.com/",
+        "liveUrl": "https://welovemovies-29y7.onrender.com/theaters",
     },
     {
         "id": 3,
