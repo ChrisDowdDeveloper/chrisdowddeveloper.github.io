@@ -4,7 +4,16 @@ import restaurant from '../assets/images/restaurant.jpg';
 import students from '../assets/images/students.jpg';
 import timer from '../assets/images/timer.jpg';
 import love from '../assets/images/love.png';
+import news from '../assets/images/news.jpg';
 export const portfolio = [
+    {
+        "id": 7,
+        "image": news,
+        "title": "AI Webpage Summarizer",
+        "description": "React, JSX, Redux, TailwindCSS, RapidAPI",
+        "url": "https://github.com/ChrisDowdDeveloper/AI-Summarizer",
+        "liveUrl": "https://heroic-smakager-30bfb4.netlify.app/"
+    },
     {
         "id": 1,
         "image": restaurant,
