@@ -5,7 +5,17 @@ import students from '../assets/images/students.jpg';
 import timer from '../assets/images/timer.jpg';
 import love from '../assets/images/love.png';
 import news from '../assets/images/news.jpg';
+import carLot from '../assets/images/carLot.jpg';
+
 export const portfolio = [
+    {
+        "id": 8,
+        "image": carLot,
+        "title": "Car Hub Showcase",
+        "description": "NextJS, TypeScript, TailwindCSS, RapidAPI",
+        "url": "https://github.com/ChrisDowdDeveloper/car-showcase",
+        "liveUrl": "https://carhub-navy.vercel.app/"
+    },
     {
         "id": 7,
         "image": news,
