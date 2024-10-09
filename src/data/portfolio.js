@@ -6,8 +6,16 @@ import timer from '../assets/images/timer.jpg';
 import love from '../assets/images/love.png';
 import news from '../assets/images/news.jpg';
 import carLot from '../assets/images/carLot.jpg';
+import worldPlate from '../assets/images/worldPlate.jpg';
 
 export const portfolio = [
+    {
+        "id": 9,
+        "image": worldPlate,
+        "title": "World Plate",
+        "url": "https://github.com/ChrisDowdDeveloper/WorldPlate",
+        "liveUrl": "https://world-plate.vercel.app/"
+    },
     {
         "id": 8,
         "image": carLot,
